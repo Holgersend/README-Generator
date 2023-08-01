@@ -7,36 +7,42 @@ const fs = require("fs");
             type: "input",
             name: "title",
             message:"Enter your proyect title:",
-        }
+        },
         {
             type: "input",
-            name: "title",
-            message:"Enter your proyect title:",
-        }
+            name: "installation",
+            message:"Enter your installation instructions:",
+        },
         {
             type: "input",
-            name: "title",
-            message:"Enter your proyect title:",
-        }
+            name: "usage",
+            message:"Enter the project usage:",
+        },
+        {
+            type: "checkbox",
+            name: "license",
+            message:"Select the license you used for this project:",
+            choices:["MIT", "PortgreSQL", "ISC", "Mozilla Public License", "The Unlicense", "Boost"],
+        },
         {
             type: "input",
-            name: "title",
-            message:"Enter your proyect title:",
-        }
+            name: "contributing",
+            message:"Enter the contributing parties includint yourself:",
+        },
         {
             type: "input",
-            name: "title",
-            message:"Enter your proyect title:",
-        }
+            name: "test",
+            message:"Enter your proyect tests:",
+        },
         {
             type: "input",
-            name: "title",
-            message:"Enter your proyect title:",
-        }
+            name: "username",
+            message:"Enter your gitHub username:",
+        },
         {
-            type: "input",
-            name: "title",
-            message:"Enter your proyect title:",
+            type:"input",
+            name:"email",
+            message:"Enter your Email:",
         }
-        ])
+        ]);
         
