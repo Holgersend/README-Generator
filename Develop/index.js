@@ -1,4 +1,4 @@
-const inquirer = inquirer("inquirer");
+const inquirer = require("inquirer");
 const fs = require("fs");
 
     inquirer
@@ -45,4 +45,3 @@ const fs = require("fs");
             message:"Enter your Email:",
         }
         ]);
-        
