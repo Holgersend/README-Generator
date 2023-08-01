@@ -1,6 +1,39 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+const readmeContent = ({ title, installation, usage, license, contributing, test, username, email }) => `
+
+# TITLE
+
+## Table of Contents
+
+
+
+
+
+## Descripttion
+
+
+## Installation 
+This application is covered under the license "MIT"
+# Usage 
+
+
+# License 
+
+
+## Contributing 
+
+
+## Tests 
+
+
+## Questions 
+For any additional questions or information, please contact me:
+- Github:
+- Email:
+`;
+
     inquirer
         .prompt([
         {
