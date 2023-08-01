@@ -3,36 +3,42 @@ const fs = require("fs");
 
 const readmeContent = ({ title, installation, usage, license, contributing, test, username, email }) => `
 
-# TITLE
+# ${title}
 
 ## Table of Contents
-
-
-
-
+- [Table of Contents](#table-of-contents)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Descripttion
-
+${description}
 
 ## Installation 
-This application is covered under the license "MIT"
-# Usage 
+${installation}
 
+# Usage 
+${usage}
 
 # License 
-
+This application is covered under the ${license} license.
 
 ## Contributing 
-
+${contributing}
 
 ## Tests 
-
+${test}
 
 ## Questions 
 For any additional questions or information, please contact me:
-- Github:
-- Email:
+- Github: [${username}](https://github.com/${username})
+- Email:  ${email}
 `;
+
 
     inquirer
         .prompt([
@@ -41,6 +47,11 @@ For any additional questions or information, please contact me:
             name: "title",
             message:"Enter your proyect title:",
         },
+        {
+            type: "input",
+            name: "description",
+            message: "Enter a description  for your project:"
+        }
         {
             type: "input",
             name: "installation",

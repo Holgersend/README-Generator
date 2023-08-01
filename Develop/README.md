@@ -10,12 +10,12 @@
 
 
 ## Installation 
-This application is covered under the license "MIT"
+
 # Usage 
 
 
 # License 
-
+This application is covered under the license "MIT"
 
 ## Contributing 
 
