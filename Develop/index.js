@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const readmeContent = ({ title, installation, usage, license, contributing, test, username, email }) => `
+const readmeContent = ({ title, description, installation, usage, license, contributing, test, username, email }) => `
 
 # ${title}
 
@@ -50,8 +50,8 @@ For any additional questions or information, please contact me:
         {
             type: "input",
             name: "description",
-            message: "Enter a description  for your project:"
-        }
+            message: "Enter a description for your project:",
+        },
         {
             type: "input",
             name: "installation",
@@ -88,4 +88,11 @@ For any additional questions or information, please contact me:
             name:"email",
             message:"Enter your Email:",
         }
-        ]);
+        ])
+        .then((answers) => {
+            const readmePage = readmeContent(answers);
+
+            fs.writeFile('README.md', readmePage, (err) =>
+            err ? console.log(err) : console.log("Successfully created README.md file!")
+            );
+        })
