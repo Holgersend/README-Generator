@@ -16,7 +16,7 @@ const readmeContent = ({ title, description, installation, usage, license, contr
 - [Tests](#tests)
 - [Questions](#questions)
 
-## Descripttion
+## Description
 ${description}
 
 ## Installation 
