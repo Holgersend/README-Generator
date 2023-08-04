@@ -4,6 +4,7 @@ const fs = require("fs");
 const readmeContent = ({ title, description, installation, usage, license, contributing, test, username, email }) => `
 
 # ${title}
+![License Badge](https://img.shields.io/badge/License-${license}-green)
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
@@ -45,7 +46,7 @@ For any additional questions or information, please contact me:
         {
             type: "input",
             name: "title",
-            message:"Enter your proyect title:",
+            message:"Enter your project title:",
         },
         {
             type: "input",
@@ -71,12 +72,12 @@ For any additional questions or information, please contact me:
         {
             type: "input",
             name: "contributing",
-            message:"Enter the contributing parties includint yourself:",
+            message:"Enter the contributing parties including yourself:",
         },
         {
             type: "input",
             name: "test",
-            message:"Enter your proyect tests:",
+            message:"Enter your project tests:",
         },
         {
             type: "input",
