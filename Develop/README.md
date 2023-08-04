@@ -2,7 +2,6 @@
 
 # Title
 
-
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Description](#description)
@@ -17,13 +16,13 @@
 
 
 ## Installation 
-
+ 
 
 # Usage 
 
 
 # License 
-This application is covered under the MIT license.
+
 
 ## Contributing 
 
