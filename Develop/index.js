@@ -64,7 +64,7 @@ For any additional questions or information, please contact me:
             message:"Enter the project usage:",
         },
         {
-            type: "checkbox",
+            type: "list",
             name: "license",
             message:"Select the license you used for this project:",
             choices:["MIT", "PortgreSQL", "ISC", "Mozilla Public License", "The Unlicense", "Boost"],
